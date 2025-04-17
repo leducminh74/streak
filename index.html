@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="vi">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <title>Pikachu</title>
+        <meta name='viewport' content="width=device-width,initial-scale=1" />
+
+        <link href='assets/img/favicon.jpg' rel="shortcut icon" type="image/png" />
+        <link href='assets/css/game.css' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="game_box">
+            <div class='width_max1000px game'>
+                <div class='padding game_header'>
+                    <div class="width3 width3_flex width3_0_9">
+                        <span class="game_header_block">
+                            Level : 
+                            <span class="game_level">1</span>
+                        </span>
+                        &nbsp;&nbsp;
+                        <span class="game_header_block">
+                            <i class="icon fas fa-clock"></i><span class="game_runtime">0</span>
+                        </span>
+                        &nbsp;&nbsp;
+                        <span class="game_header_block ">
+                            <span class="stt_action btn_hint">
+                                <i class="icon fa-solid fa-lightbulb"></i><span class="hint_left">0</span>
+                            </span>
+                        </span>
+
+                        <span class="game_header_block change_level">
+                            <select name="level" id="level-select">
+                                <optgroup label="Change Level">
+                                    <option value="0">1</option>
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                    <option value="3">4</option>
+                                    <option value="4">5</option>
+                                </optgroup>
+
+                            </select>
+                        </span>
+                    </div>
+                    <div class="width3 width3_0_3 align_right">
+                        <i class="fas fa-volume-down btn_mute stt_action stt_avaiable" title="mute"></i>
+                    </div>
+                    <div class="clear_both"></div>
+                </div>
+                <div class='game_content'>
+                    <div class="game_layer running">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeout_modal">
+            <div class="box box_timeout">
+                <form>
+                    <span class="text-center text-warning">Time Out!!</span>
+                    <span class="text-center">Do you want play again?</span>
+
+                    <div class="btn-select">
+                        <div class="btn-box-inp">
+                            <button class="btnText" type="button" value="1" >Play again</button>
+                        </div>
+                        <div class="btn-box-inp btn-cancel">
+                            <button class="btnText" type="button" value="0">Exit</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="win_modal">
+            <div class="box box_win">
+                <form>
+                    <span class="text-center text-success">You Win</span>
+                    <span class="text-center text-success"></span>
+                    <span class="text-center">Do you want play a new game?</span>
+                    <div class="btn-select">
+                        <div class="btn-box-inp">
+                            <button class="btnText-Win" type="button" value="1" >New game</button>
+                        </div>
+                        <div class="btn-box-inp btn-cancel">
+                            <button class="btnText-Win" type="button" value="0">Exit</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="complete_modal">
+            <div class="box box_complete">
+                <form>
+                    <span class="text-center text-success">Complete this level</span>
+                    <div class="score">
+                        <span class="text-center text-gray" style="width: 200px">Time used:</span>
+                        <span class="time_used text-gray text-center"></span>
+                    </div>
+                    <div class="score">
+                        <span class="text-center text-gray" style="width: 200px">Hint used:</span>
+                        <span class="hint_used text-gray text-center"></span>
+                    </div>
+
+                    <div class="btn-select" style="margin-top: -40px">
+                        <div class="btn-box-inp">
+                            <button class="btnText-Complete" type="button" value="1" >Next level</button>
+                        </div>
+                        <div class="btn-box-inp btn-playag">
+                            <button class="btnText-Complete" type="button" value="2">Play again</button>
+                        </div>
+                        <div class="btn-box-inp btn-cancel">
+                            <button class="btnText-Complete" type="button" value="0">Exit</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <script src='assets/js/game.js'></script>
+    </body>
+</html>
